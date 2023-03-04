@@ -35,8 +35,6 @@ git clone
 - Dark Mode
 - Random replies for hi, bye, and Stay Strong.
 
-<br>
-
 ## 💖 Support
 
 <p>You can show your support by starring this project. ★</p>
