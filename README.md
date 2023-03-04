@@ -2,10 +2,10 @@
 
 git clone
 ![image](https://user-images.githubusercontent.com/86098390/222922881-b38d655d-df02-4dc8-a419-a6efa50f1916.png)
-[![Website](https://img.shields.io/website?style=for-the-badge&up_message=Demo&url=https%3A%2F%2Fvima.netlify.app%2F)]([https://vima.netlify.app/](https://nayab-wadood-99.web.app/))
+[![Website](https://img.shields.io/website?style=for-the-badge&up_message=Demo&url=https%3A%2F%2Fvima.netlify.app%2F)](https://nayab-wadood-99.web.app/))
 
 ## Using Firebase deploy
-[![Deploy to Firebase](https://console.firebase.google.com/)
+[![Deploy to Firebase]
 - Install Firebase Tools `npm install firebase-tools -g`
 - Login to Firebase `firebase login`
 - Initialize Firebase in Your React App `firebase init`
