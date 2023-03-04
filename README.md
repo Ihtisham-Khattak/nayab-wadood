@@ -6,17 +6,13 @@ git clone
 
 ## Using Firebase deploy
 [![Deploy to Firebase](https://console.firebase.google.com/)
-- Install Firebase Tools ☝️
-- `npm install firebase-tools -g`
-- Login to Firebase
-- `firebase login`
-- Initialize Firebase in Your React App
-- `firebase init`
+- Install Firebase Tools `npm install firebase-tools -g`
+- Login to Firebase `firebase login`
+- Initialize Firebase in Your React App `firebase init`
 - Select Hosting: Configure and deploy Firebase Hosting sites.
 - Select Use an existing project
 - Select your Firebase Project (e.g. nayab-wadood)
-- Deploying Your App
-- `firebase deploy`
+- Deploying Your App `firebase deploy`
 
 - Congratulation 🎉 Your Portfolio website is live.🥳
 
