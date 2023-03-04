@@ -11,34 +11,14 @@ git clone
 - Login to Firebase
 - `firebase login`
 - Initialize Firebase in Your React App
-- `firebase init
+- `firebase init`
 - Select Hosting: Configure and deploy Firebase Hosting sites.
 - Select Use an existing project
 - Select your Firebase Project (e.g. nayab-wadood)
 - Deploying Your App
 - `firebase deploy`
 
-- <details>
-  <summary>Click on connect to Github</summary>
-  ```npm install firebase-tools -g```
-  <img alt="m1" src="src/assets/img/m1.png" />
-  </details>
-- <details>
-  <summary>Click on Authorize netlify</summary>
-  <img alt="m2" src="src/assets/img/m2.png" />
-  </details>
-- <details>
-  <summary>Chose a github repository name and click on Save and Deploy</summary>
-  <img alt="m3" src="src/assets/img/m3.png" />
-  </details>
-- <details>
-  <summary>Your portfolio website is live 🚀</summary>
-  <img alt="m4" src="src/assets/img/m4.png" />
-  </details> 
-- Those step ☝️ create a repository in your github account, go to that repository
-- Edit `src/Name.js` 
-- Commit change and push 🎉 Your Portfolio website is ready.🥳
-
+- Congratulation 🎉 Your Portfolio website is live.🥳
 
 ## 👨‍💻 Technologies Used
 
@@ -59,7 +39,7 @@ git clone
 - Dark Mode
 - Random replies for hi, bye, and Stay Strong.
 
-<br><br>
+<br>
 
 ## 💖 Support
 
