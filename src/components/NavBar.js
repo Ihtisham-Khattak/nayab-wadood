@@ -6,9 +6,18 @@ import navIcon3 from "../assets/img/nav-icon3.svg";
 import { HashLink } from "react-router-hash-link";
 import { BrowserRouter as Router } from "react-router-dom";
 import { BsMoonStarsFill, BsFillSunFill } from "react-icons/bs";
+import { useSelector } from "react-redux";
+
+
 export const NavBar = () => {
+  
+  //active link
   const [activeLink, setActiveLink] = useState("home");
+  //background
   const [scrolled, setScrolled] = useState(false);
+
+
+const darkmode = useSelector((state) => state.theme.darkmode)
 
   useEffect(() => {
     const onScroll = () => {
@@ -30,7 +39,7 @@ export const NavBar = () => {
 
   return (
     <Router>
-      <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
+      <Navbar expand="md" className={scrolled ? "scrolled" : ""} bg={!daskMode ? "#fff" : "#344144"} color={!daskMode ? "#000" : "#fff"} >
         <Container>
           <Navbar.Brand href="/">
             <h2 className="text-white">Nayab Wadood</h2>
