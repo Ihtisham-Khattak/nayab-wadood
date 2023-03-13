@@ -5,8 +5,9 @@ import navIcon2 from "../assets/img/nav-icon2.svg";
 import navIcon3 from "../assets/img/nav-icon3.svg";
 import { HashLink } from "react-router-hash-link";
 import { BrowserRouter as Router } from "react-router-dom";
-import { BsMoonStarsFill, BsFillSunFill } from "react-icons/bs";
-import { useSelector } from "react-redux";
+// import { BsMoonStarsFill, BsFillSunFill } from "react-icons/bs";
+// import { useSelector, useDispatch } from "react-redux";
+// import asyncToggleTheme from "../store/Slice"
 
 
 export const NavBar = () => {
@@ -16,8 +17,8 @@ export const NavBar = () => {
   //background
   const [scrolled, setScrolled] = useState(false);
 
-
-const darkmode = useSelector((state) => state.theme.darkmode)
+// const dispatch = useDispatch();
+// const darkmode = useSelector((state) => state.theme.darkmode)
 
   useEffect(() => {
     const onScroll = () => {
@@ -39,7 +40,7 @@ const darkmode = useSelector((state) => state.theme.darkmode)
 
   return (
     <Router>
-      <Navbar expand="md" className={scrolled ? "scrolled" : ""} bg={!daskMode ? "#fff" : "#344144"} color={!daskMode ? "#000" : "#fff"} >
+      <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
         <Container>
           <Navbar.Brand href="/">
             <h2 className="text-white">Nayab Wadood</h2>
@@ -95,16 +96,19 @@ const darkmode = useSelector((state) => state.theme.darkmode)
                 <button className="vvd">
                   <span>Let’s Connect</span>
                 </button>
+                <button className="vvd">
+                  Resume
+                </button>
               </HashLink>
 
-              <div id="darkmode">
+              {/* <div id="darkmode">
                 <input type="checkbox" className="checkbox" id="checkbox" />
                 <label htmlFor="checkbox" className="label">
-                  <BsMoonStarsFill color="white" />
-                  <BsFillSunFill color="yellow" />
+                  <BsMoonStarsFill color="white" onClick={() => dispatch(asyncToggleTheme())} />
+                  <BsFillSunFill color="yellow" onClick={() => dispatch(asyncToggleTheme())}/>
                   <div className="ball"></div>
                 </label>
-              </div>
+              </div> */}
             </span>
           </Navbar.Collapse>
         </Container>
