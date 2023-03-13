@@ -1,33 +1,28 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  color: {
-    header: "#ebfbff",
-    body: "#fff",
-    footer: "#003333",
-  },
-  mobile: "768px",
+  
   darkmode: false,
 };
 
 const themeSlice = new createSlice({
+  
   name: "theme",
   initialState,
 
   reducers: {
     setDarkMode: (state) => {
-        state.colors.header = "#324B50";
-        state.colors.body = "#445155";
-        state.darkmode = true;
+        state.darkmode = !state.darkmode;
     },
-
-    setDefualtMode: (state) => {
-        state.colors.header = "#ebfbff";
-        state.colors.body = "#fff";
-        state.darkmode = false;
-    }
   },
 });
+
+export const asyncToggleTheme = () => (dispatch) => {
+
+  const isDarkMode = !!JSON.parse(localStorage.getItem("darkMode"));
+  localStorage.setItem("darkMode", !isDarkMode);
+  dispatch(setDarkMode());
+};
 
 export const {setDarkMode, setDefualtMode} = themeSlice.actions;
 export default themeSlice.reducer;
