@@ -5,20 +5,13 @@ import navIcon2 from "../assets/img/nav-icon2.svg";
 import navIcon3 from "../assets/img/nav-icon3.svg";
 import { HashLink } from "react-router-hash-link";
 import { BrowserRouter as Router } from "react-router-dom";
-// import { BsMoonStarsFill, BsFillSunFill } from "react-icons/bs";
-// import { useSelector, useDispatch } from "react-redux";
-// import asyncToggleTheme from "../store/Slice"
+import ReactSwitch from "react-switch";
 
-
-export const NavBar = () => {
-  
+export const NavBar = ({ toggleTheme, theme }) => {
   //active link
   const [activeLink, setActiveLink] = useState("home");
   //background
   const [scrolled, setScrolled] = useState(false);
-
-// const dispatch = useDispatch();
-// const darkmode = useSelector((state) => state.theme.darkmode)
 
   useEffect(() => {
     const onScroll = () => {
@@ -96,10 +89,9 @@ export const NavBar = () => {
                 <button className="vvd">
                   <span>Let’s Connect</span>
                 </button>
-                <button className="vvd">
-                  Resume
-                </button>
+                <button className="vvd">Resume</button>
               </HashLink>
+              <ReactSwitch onChange={toggleTheme} checked={theme} />
 
               {/* <div id="darkmode">
                 <input type="checkbox" className="checkbox" id="checkbox" />

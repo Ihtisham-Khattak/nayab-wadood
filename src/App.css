@@ -249,10 +249,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-color: transparent;
 }
 
+/* Navbar End */
 
 :root {
   /** sunny side **/
-  --blue-background: #C2E9F6;
+  --blue-background: #c2e9f6;
   --blue-border: #72cce3;
   --blue-color: #96dcee;
   --yellow-background: #fffaa8;
@@ -291,25 +292,25 @@ body {
 }
 
 /* Mode Start */
-#darkmode{
+#darkmode {
   display: flex;
   justify-content: center;
 }
 
-#darkmode .dark {
+#dark .dark {
   background-color: #292c35;
 }
-#darkmode .checkbox {
+#dark .checkbox {
   opacity: 0;
   position: absolute;
 }
 
-#darkmode .label {
+#dark .label {
   width: 38px;
   height: 14px;
-  background-color:#111;
+  background-color: #111;
   display: flex;
-  border-radius:50px;
+  border-radius: 50px;
   align-items: center;
   justify-content: space-between;
   padding: 5px;
@@ -318,7 +319,7 @@ body {
   cursor: pointer;
 }
 
-#darkmode .ball {
+#dark .ball {
   width: 20px;
   height: 20px;
   background-color: white;
@@ -329,7 +330,7 @@ body {
   transition: transform 0.2s linear;
 }
 
-#darkmode .checkbox:checked + .label .ball{
+#dark .checkbox:checked + .label .ball {
   transform: translateX(24px);
 }
 /* Mode End */
@@ -481,6 +482,17 @@ body {
   padding: 260px 0 100px 0;
   background: #5a8d89;
 }
+
+#light .banner{
+  background: #121212;
+  color: #ffffff;
+}
+
+#dark .banner{
+  background: #5a8d89;
+  color: #121212;
+}
+
 .banner .tagline {
   font-weight: 700;
   letter-spacing: 0.8px;
@@ -873,8 +885,6 @@ body {
   bottom: 5% !important;
 }
 
-
-
 .myCarousel h3 {
   color: #222;
   font-weight: 100;
@@ -967,4 +977,13 @@ body {
     width: 24% !important;
     border-radius: 50%;
   }
+}
+
+#light {
+  background: #000;
+  color: #ffffff;
+}
+#dark {
+  background: #ffffff;
+  color: #000;
 }
