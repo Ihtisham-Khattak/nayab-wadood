@@ -5,7 +5,7 @@
 [![Website](https://img.shields.io/website?style=for-the-badge&up_message=Demo&url=https%3A%2F%2Fvima.netlify.app%2F)](https://nayab-wadood-99.web.app/))
 
 ## Using Firebase deploy
-[![Deploy to Firebase (https://console.firebase.google.com/)]
+![Deploy to Firebase (https://console.firebase.google.com/)]
 - Install Firebase Tools `npm install firebase-tools -g`
 - Login to Firebase `firebase login`
 - Initialize Firebase in Your React App `firebase init`
@@ -38,7 +38,7 @@
 ## 💖 Support
 
 <p>You can show your support by starring this project. ★</p>
-<a href="https://github.com/arifszn/gitprofile/stargazers">
+<a href="https://github.com/Ihtisham-Khattak">
   <img src="https://img.shields.io/github/stars/arifszn/gitprofile?style=social" alt="Github Star">
 </a>
 
