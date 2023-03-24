@@ -569,6 +569,17 @@ body {
 .skill {
   padding: 0 0 50px 0;
   position: relative;
+  background: "#fbe479"
+}
+
+#light #skills{
+  background: #121212;
+  color: #ffffff;
+}
+
+#dark #skills{
+  background: rgb(251, 228, 121);
+  color: #121212;
 }
 
 .skill-bx {
@@ -619,6 +630,17 @@ body {
   position: relative;
   background: rgb(90, 141, 137);
 }
+
+#light .project{
+  background: #121212;
+  color: #ffffff;
+}
+
+#dark .project{
+  background: rgb(90, 141, 137);
+  color: #121212;
+}
+
 .project h2 {
   font-size: 45px;
   font-weight: 700;
@@ -633,6 +655,17 @@ body {
   text-align: center;
   width: 56%;
 }
+
+#light .project p{
+  background: #121212;
+  color: #ffffff;
+}
+
+#dark .project p{
+  background: rgb(90, 141, 137);
+  color: #121212;
+}
+
 .project .nav.nav-pills {
   width: 72%;
   margin: 0 auto;
@@ -841,6 +874,16 @@ body {
   height: 100%;
   padding: 10px 20px;
   background: rgb(251, 228, 121) !important;
+}
+
+#light .testamonial{
+  background: #121212;
+  color: #ffffff;
+}
+
+#dark .testamonial{
+  background: rgb(90, 141, 137);
+  color: #121212;
 }
 
 .testamonial h2 {

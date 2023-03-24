@@ -32,7 +32,7 @@ export const Skills = () => {
   };
 
   return (
-    <section className="skill" id="skills" style={{ background: "#fbe479" }}>
+    <section className="skill" id="skills">
       <div className="container">
         <div className="row">
           <div className="col-12">
